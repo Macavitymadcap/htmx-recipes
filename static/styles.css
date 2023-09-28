@@ -1,0 +1,176 @@
+/* Reset default margin and padding */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+  text-align: center;
+}
+
+/* Set default font and background */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #370953;
+    color: #fff;
+}
+
+/* Header styles */
+header {
+    background-color: #190130;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ccc;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #fff;
+}
+
+/* Main content section */
+main {
+    padding: 20px;
+    margin-left: 5em;
+    margin-right: 5em
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+summary > h3:hover {
+  color: rgb(27, 207, 27);
+}
+
+a {
+    color:chartreuse
+}
+
+main section address a:link {
+    color: #fff
+}
+
+/* Footer styles */
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #2a0854;
+    padding: 10px 0;
+    text-align: center;
+    color: #ccc;
+    font-size: 14px;
+}
+
+/* Recipe card*/
+.card {
+  background-color: rgba(150, 150, 150, 0.185);
+  font-family: 'Roboto', sans-serif;
+  border-radius: 10px;
+  padding: 3em;
+  margin: 3em;
+}
+
+summary {
+  display: block;
+  cursor: pointer;
+}
+
+.recipe-details {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.recipe-info p,
+.recipe-ingredients ul,
+.recipe-method ol {
+  margin: 0;
+  font-size: 18px;
+}
+
+.recipe-info > p,
+.recipe-ingredients > ul,
+.recipe-method > ol {
+  margin-left: 6em;
+  margin-right: 6em;
+}
+
+.recipe-ingredients ul,
+.recipe-method ol {
+  padding-left: 20px;
+}
+
+.buttons {
+  text-align: center;  
+}
+
+.buttons > button {
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: rgba(108, 107, 107, 0.452);
+}
+
+button:hover {
+  background-color: rgba(163, 163, 163, 0.482);
+}
+.delete-button {
+  color: #ff4242;
+}
+
+.edit-button {
+  color: rgb(27, 207, 27);
+}
+
+.form-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px; /* Adjust spacing between each label-input pair */
+  width: 60%;
+}
+
+label {
+  flex: .5; /* Labels take equal space within the flex container */
+  padding-right: 5px; /* Adjust spacing between label and input */
+  text-align: end;
+}
+
+input {
+  flex: 1; /* Inputs take double the space of labels */
+  width: 5em;
+}

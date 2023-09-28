@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A playground for experiemnting with HTMX">
+    <meta name="author" content="Dan Kiernan">
+    
+    <link rel="stylesheet" href="/static/styles.css">
+    
+    <script src="script.js" defer></script>
+    <script src="https://unpkg.com/htmx.org@1.9.2"
+        integrity="sha384-L6OqL9pRWyyFU3+/bjdSri+iIphTN/bvYyM37tICVyOJkWZLpP2vGn6VUEXgzg6h"
+        crossorigin="anonymous"></script>
+    
+    <title>DanK Recipes</title>
+</head>
+<body>
+    <header>
+        <h1>DanK Recipes</h1>
+        <nav>
+            <ul hx-boost="true">
+                <li><a href="/search" hx-target="#main">Search</a></li>
+                <li><a href="/home">Home</a></li>
+                <li><a href="/create" hx-target="#main">Create</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+        <section>
+            <h2>Home Page</h2>
+            <p>This is the root page of DanK Recipes, a world beating app for creating, reading updating and delelting recipes.</p>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 DanK Recipes. All rights reserved.</p>
+    </footer>
+</body>
+</html>
